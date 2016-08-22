@@ -1,34 +1,81 @@
-/*
- * Globals
- */
-
-body {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    color: #555;
+.box {
+    text-align: center;
+    vertical-align: middle;
 }
 
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
-    margin-top: 0;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: normal;
-    color: #333;
-}
+/*.pad, .box {*/
+    /*padding: 10px;*/
+/*}*/
 
-/*
- * Override Bootstrap's default container.
- */
+.indent-body { padding-top: 80px; }
+.bs-callout { padding: 5px 20px;}
+.navbar {min-height: 80px;}
+.navbar-inverse {
+    background-color: #262626;
+    border-color: #080808;
+}
+.navbar-brand {
+    padding: 20px;
+    font-size: 22px;
+    line-height: 30px;
+}
+.navbar-inverse .navbar-brand {
+    color: #D8DBDE;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #D8DBDE;
+}
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    color: #2aabd2;
+}
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
+    color: #2aabd2;
+}
+.nav > li > a > img {
+    max-width: 38px;
+}
+.navbar-nav > li > a {
+    padding-top: 23px;
+    font-size: 17px;
+    line-height: 30px;
+}
+.icons > li:not(:hover) {
+    transition: 1s;
+    filter: saturate(0%);
+    -webkit-filter: saturate(0%);
+}
+.icons > li:hover {
+    transition: .25s;
+}
+footer{
+    margin-bottom: 20px;
+}
+footer hr{
+    border-color: #b7b6b6;
+}
 
 @media (min-width: 1200px) {
     .container {
-        width: 970px;
+        width: 980px;
     }
 }
-
+.starter-template h2 span{
+    color: #761c19;
+}
+@media (max-width: 837px) {
+    .navbar-nav > li > a {
+        transition: all .1s;
+    }
+    .icons{
+        display: block !important;
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+    .icons li{
+        display: inline-block;
+    }
+}
 /*
  * Masthead for nav
  */
