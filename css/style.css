@@ -2,12 +2,17 @@
     text-align: center;
     vertical-align: middle;
 }
-
-/*.pad, .box {*/
-    /*padding: 10px;*/
-/*}*/
-
-
+.contact {
+    margin: 5em 0 0 0;
+    padding: 0;
+    list-style-type: none;
+}
+.contact {
+    font-size: 18px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+}
 .indent-body { padding-top: 80px; }
 .bs-callout { padding: 5px 20px;}
 .navbar {min-height: 80px;}
